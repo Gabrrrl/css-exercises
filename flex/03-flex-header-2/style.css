@@ -12,6 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .profile-image {
@@ -35,14 +39,23 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  justify-content: flex-end;
+  margin-left: auto;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 0px;
 }
 
 ul {
   list-style-type: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  gap: 8px;
 }
+
+/* Should separate left and right flex items using html for better code */
