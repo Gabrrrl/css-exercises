@@ -2,6 +2,17 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-items {
+  display: flex;
+  gap: 52px;
+}
+
 img {
   width: 100px;
   height: 100px;
@@ -10,6 +21,16 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.item {
+  order: 1;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  max-width: 200px;
 }
 
 /* do not edit this footer */
@@ -24,3 +45,5 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* Did 3 flex conatiners instead of 2... made the problem harder by inclusing the information div.. in the end the outcome is behaving the same way, and i learned from trying to figure out how to align everything*/
